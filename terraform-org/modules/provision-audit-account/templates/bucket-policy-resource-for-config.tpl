@@ -1,0 +1,1 @@
+"arn:aws:s3:::${bucket_name}/config/AWSLogs/${account_id}/Config/*"
