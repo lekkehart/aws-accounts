@@ -26,3 +26,8 @@ resource "aws_organizations_account" "test2_group2_dev" {
   name  = "test2+group2+dev"
   email = "test2+group2+dev@ekkesoft.se"
 }
+
+resource "aws_organizations_account" "test2_group3_dev" {
+  name  = "test2+group3+dev"
+  email = "test2+group3+dev@ekkesoft.se"
+}
