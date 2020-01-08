@@ -60,3 +60,13 @@ Let's create the following user in order to illustrate what the workflow is:
 * Creates AWS accounts.
 * Provisions the `audit-account`account with information about the newly created account.
   It modifies S3 bucket policy and KMS policy in the `audit-account` account such that the new account is allowed to send logging information to `audit-account`. 
+
+
+## TODO
+
+### Module Dependency of `provision-audit-account` on `create-accounts`
+There is an issue with module dependency. Module `provision-audit-account` is to be run only after `create-accounts` has 
+run. Not sure why it does not implicitly resolve this. It should because it clearly depends on output variables of 
+`create-accounts`.
+
+The temporary workaround is to run `terraform apply` twice. 

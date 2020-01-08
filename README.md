@@ -21,4 +21,3 @@ _NOTE! There are better ways for creating CloudTrails in an organization now, se
 [Organization Trails](https://aws.amazon.com/about-aws/whats-new/2018/11/aws-cloudtrail-adds-support-for-aws-organizations/).
 Nevertheless, it is useful to show this mechanism of provisioning the audit account for a new AWS account because
 there could be other aspects that need to get set up centrally whenever there is a new account created._
-

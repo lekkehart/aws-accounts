@@ -11,7 +11,7 @@ module "create-accounts" {
 module "provision-audit-account" {
   source = "./modules/provision-audit-account"
 
-  // TODO EKKLOT
+  // TODO
   // Enforce module dependency, so that provision-audit-account is first run after create-accounts.
   // Not sure why it does not implicitly resolve this.
 
